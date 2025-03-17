@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DragonApi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div>
+      <form id="guerreiro">
+        <label for="dragonName">
+          <h1>Nome do Personagem:</h1>
+        </label>
+        <input type="text" id="nameDragon" placeholder="Numeros do 1 ao 58">
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div class="result">
+        <h1> Nome: <span id="nomeDragon"> ... </span></h1>
+        <p> Raça: <span id="raceDragon"> ... </span></p>
+        <p> Gênero: <span id="genderDragon"> ... </span></p>
+        <p> Afiliação: <span id="aflDragon"> ... </span></p>
+        <p> Ki: <span id="kiDragon"> ... </span></p>
+
+        <div class="desc-container">
+          <img src="" id="imgDragon" alt="Imagem do personagem">
+          <p> Descrição: <span id="descDragon"> ... </span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+
+  document.getElementById("guerreiro").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const nomeDragon = document.getElementById("nameDragon").value.toLowerCase();
+    getData(nomeDragon);
+  });
+
+  async function getData(nomeDragon = "goku") {
+    const url = `https://dragonball-api.com/api/characters/${nomeDragon}`;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Erro: ${response.status}`);
+      }
+
+      const json = await response.json();
+      console.log(json);
+      console.log(json.name);
+      console.log(json.race);
+      console.log(json.gender);
+      console.log(json.image);
+      console.log(json.affiliation);
+      console.log(json.ki);
+      console.log(json.description);
+
+      document.getElementById("nomeDragon").innerText = json.name;
+      document.getElementById("raceDragon").innerText = json.race;
+      document.getElementById("genderDragon").innerText = json.gender;
+      document.getElementById("aflDragon").innerText = json.affiliation;
+      document.getElementById("kiDragon").innerText = json.ki;
+      document.getElementById("descDragon").innerText = json.description;
+      document.getElementById("imgDragon").src = json.image;
+
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
+
+  getData();
+
+</script>
