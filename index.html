@@ -1,84 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DragonApi</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <div class="container">
     <div>
-      <form id="guerreiro">
-        <label for="dragonName">
-          <h1>Numero do Personagem:</h1>
-        </label>
-        <input type="text" id="nameDragon" placeholder="Numeros do 1 ao 44">
-        <button type="submit">Buscar</button>
-      </form>
+        <p style="align-self: center;">
+        <form id="pokemonForm">
+            <label for="pokemonName">
+                <h1>Nome do Pokémon:</h1>
+            </label>
+            <input type="text" id="pokemonName" placeholder="Ex: regigigas">
+            <button type="submit">Buscar</button>
+        </form>
+        </p>
 
-      <div class="result">
-        <h1> Nome: <span id="nomeDragon"> ... </span></h1>
-        <p> Raça: <span id="raceDragon"> ... </span></p>
-        <p> Gênero: <span id="genderDragon"> ... </span></p>
-        <p> Afiliação: <span id="aflDragon"> ... </span></p>
-        <p> Ki: <span id="kiDragon"> ... </span></p>
+        <div class="main">
 
-        <div class="desc-container">
-          <img src="" id="imgDragon" alt="Imagem do personagem">
-          <p> Descrição: <span id="descDragon"> ... </span></p>
+            <div class="divi">
+                <h1 id="nomePokemon">...</h1>
+
+                <img src="" id="imgPokemon">
+
+                <p>Pokedex:
+                    <span id="pokedex">...</span>
+                </p>
+
+                <p>Primeira abilidade:
+                    <span id="abl">...</span>
+                </p>
+
+                <p>Tipos:
+                    <span id="type1">...</span>
+                    <span id="type2"></span> 
+                </p>
+
+            </div>
+
+            <div>
+                <h1> Forma shiny do pokemon:</h1>
+
+                <img src="" id="imgShiny">
+            </div>
+
+
         </div>
-      </div>
-    </div>
-  </div>
 
+    </div>
 </body>
 
 </html>
 
-
 <script>
 
-  document.getElementById("guerreiro").addEventListener("submit", function (event) {
-    event.preventDefault();
-    const nomeDragon = document.getElementById("nameDragon").value.toLowerCase();
-    getData(nomeDragon);
-  });
+    document.getElementById("pokemonForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+        buscaPokemon(pokemonName);
+    });
 
-  async function getData(nomeDragon = "goku") {
-    const url = `https://dragonball-api.com/api/characters/${nomeDragon}`;
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`Erro: ${response.status}`);
-      }
+    async function buscaPokemon(pokemonName = "regigigas") {
+        const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+            }
 
-      const json = await response.json();
-      console.log(json);
-      console.log(json.name);
-      console.log(json.race);
-      console.log(json.gender);
-      console.log(json.image);
-      console.log(json.affiliation);
-      console.log(json.ki);
-      console.log(json.description);
+            const json = await response.json();
+            console.log(json);
 
-      document.getElementById("nomeDragon").innerText = json.name;
-      document.getElementById("raceDragon").innerText = json.race;
-      document.getElementById("genderDragon").innerText = json.gender;
-      document.getElementById("aflDragon").innerText = json.affiliation;
-      document.getElementById("kiDragon").innerText = json.ki;
-      document.getElementById("descDragon").innerText = json.description;
-      document.getElementById("imgDragon").src = json.image;
+            // Exibe o nome do Pokémon
+            document.getElementById("nomePokemon").innerText = json.name;
 
-    } catch (error) {
-      console.error(error.message);
+            // Exibe o número da Pokédex
+            document.getElementById("pokedex").innerText = json.id;
+
+            // Exibe a primeira habilidade
+            document.getElementById("abl").innerText = json.abilities[0].ability.name;
+
+            document.getElementById("type1").innerText = json.types[0].type.name;
+
+            if (json.types.length > 1) {
+                document.getElementById("type2").innerText = json.types[1].type.name;
+            } else {
+                document.getElementById("type2").innerText = ''; // Caso não tenha segundo tipo, deixa vazio
+            }
+
+            document.getElementById("imgPokemon").src = json.sprites.other.home.front_default;
+
+            document.getElementById("imgShiny").src = json.sprites.other.home.front_shiny;
+
+        } catch (error) {
+            console.error(error.message);
+        }
     }
-  }
 
-  getData();
+    buscaPokemon();
 
 </script>
