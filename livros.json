@@ -1,0 +1,200 @@
+{
+  "categorias": [
+    {
+      "id": "ficcao",
+      "nome": "Ficção",
+      "icone": "https://img.icons8.com/ios-filled/50/ffd700/book.png",
+      "livros": [
+        {
+          "id": "f1",
+          "nome": "1984",
+          "descricao": "Distopia clássica de George Orwell sobre um regime totalitário.",
+          "preco": 39.9,
+          "imagem": "https://images.unsplash.com/photo-1586481060584-b4dddc6000c1?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "f2",
+          "nome": "O Conto da Aia",
+          "descricao": "Uma sociedade opressora retratada por Margaret Atwood.",
+          "preco": 42.5,
+          "imagem": "https://images.unsplash.com/photo-1601933471667-4fcd78b90d11?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "f3",
+          "nome": "Duna",
+          "descricao": "Clássico de ficção científica sobre poder, ecologia e destino.",
+          "preco": 59.0,
+          "imagem": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "f4",
+          "nome": "O Senhor dos Anéis",
+          "descricao": "A jornada épica pela Terra Média de J.R.R. Tolkien.",
+          "preco": 89.9,
+          "imagem": "https://images.unsplash.com/photo-1617957741567-18c7fd471cc6?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "f5",
+          "nome": "As Crônicas de Nárnia",
+          "descricao": "Fantasia clássica com alegorias e aventuras mágicas.",
+          "preco": 49.5,
+          "imagem": "https://images.unsplash.com/photo-1551022377-3f4d7b733b5f?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "f6",
+          "nome": "A Revolução dos Bichos",
+          "descricao": "Fábula política sobre o poder e a corrupção.",
+          "preco": 29.9,
+          "imagem": "https://images.unsplash.com/photo-1563201181-98d0d8f0e2a7?auto=format&fit=crop&w=64&q=80"
+        }
+      ]
+    },
+    {
+      "id": "nao-ficcao",
+      "nome": "Não Ficção",
+      "icone": "https://img.icons8.com/ios-filled/50/ffd700/open-book.png",
+      "livros": [
+        {
+          "id": "nf1",
+          "nome": "Sapiens",
+          "descricao": "Uma breve história da humanidade por Yuval Noah Harari.",
+          "preco": 54.0,
+          "imagem": "https://images.unsplash.com/photo-1589330694652-c9f3c3f1840b?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "nf2",
+          "nome": "Homo Deus",
+          "descricao": "Reflexões sobre o futuro da humanidade.",
+          "preco": 56.5,
+          "imagem": "https://images.unsplash.com/photo-1590608897129-79da86b1883b?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "nf3",
+          "nome": "O Gene",
+          "descricao": "História do gene e da genética por Siddhartha Mukherjee.",
+          "preco": 62.0,
+          "imagem": "https://images.unsplash.com/photo-1581092334585-fcb5c75389e2?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "nf4",
+          "nome": "Fogo e Sangue",
+          "descricao": "História da casa Targaryen por George R.R. Martin.",
+          "preco": 69.9,
+          "imagem": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "nf5",
+          "nome": "Cosmos",
+          "descricao": "Uma jornada pelo espaço-tempo com Carl Sagan.",
+          "preco": 51.5,
+          "imagem": "https://images.unsplash.com/photo-1525186402429-6bfc9837e95d?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "nf6",
+          "nome": "Breves Respostas para Grandes Questões",
+          "descricao": "Stephen Hawking responde às grandes perguntas da ciência.",
+          "preco": 44.0,
+          "imagem": "https://images.unsplash.com/photo-1551817958-f900b248f6c2?auto=format&fit=crop&w=64&q=80"
+        }
+      ]
+    },
+    {
+      "id": "autoajuda",
+      "nome": "Autoajuda",
+      "icone": "https://img.icons8.com/ios-filled/50/ffd700/idea.png",
+      "livros": [
+        {
+          "id": "a1",
+          "nome": "O Poder do Hábito",
+          "descricao": "Como hábitos moldam nossas vidas.",
+          "preco": 38.0,
+          "imagem": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "a2",
+          "nome": "Essencialismo",
+          "descricao": "O disciplinado caminho para menos.",
+          "preco": 40.5,
+          "imagem": "https://images.unsplash.com/photo-1583312317986-d0d48f12b8c9?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "a3",
+          "nome": "A Sutil Arte de Ligar o F*da-se",
+          "descricao": "Um olhar realista e direto sobre a vida.",
+          "preco": 39.9,
+          "imagem": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "a4",
+          "nome": "Mindset",
+          "descricao": "A nova psicologia do sucesso.",
+          "preco": 45.0,
+          "imagem": "https://images.unsplash.com/photo-1517971071642-34a2d3dacff8?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "a5",
+          "nome": "Quem Pensa Enriquece",
+          "descricao": "Clássico de Napoleon Hill sobre sucesso financeiro.",
+          "preco": 34.5,
+          "imagem": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "a6",
+          "nome": "O Milagre da Manhã",
+          "descricao": "Transforme sua vida antes das 8 horas.",
+          "preco": 36.0,
+          "imagem": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=64&q=80"
+        }
+      ]
+    },
+    {
+      "id": "infantil",
+      "nome": "Infantil",
+      "icone": "https://img.icons8.com/ios-filled/50/ffd700/teddy-bear.png",
+      "livros": [
+        {
+          "id": "i1",
+          "nome": "O Pequeno Príncipe",
+          "descricao": "Clássico filosófico e poético para todas as idades.",
+          "preco": 29.0,
+          "imagem": "https://images.unsplash.com/photo-1591018902635-95f66c86140c?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "i2",
+          "nome": "Onde Vivem os Monstros",
+          "descricao": "História comovente sobre imaginação e emoções.",
+          "preco": 34.0,
+          "imagem": "https://images.unsplash.com/photo-1615550443820-4d87cb28f995?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "i3",
+          "nome": "Diário de um Banana",
+          "descricao": "As hilárias aventuras de Greg Heffley.",
+          "preco": 28.5,
+          "imagem": "https://images.unsplash.com/photo-1586373961124-98dafe4be9e1?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "i4",
+          "nome": "Harry Potter e a Pedra Filosofal",
+          "descricao": "O início da jornada do jovem bruxo.",
+          "preco": 49.9,
+          "imagem": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "i5",
+          "nome": "A Fantástica Fábrica de Chocolate",
+          "descricao": "A mágica história de Willy Wonka.",
+          "preco": 32.0,
+          "imagem": "https://images.unsplash.com/photo-1590608897360-8c4bcd437b57?auto=format&fit=crop&w=64&q=80"
+        },
+        {
+          "id": "i6",
+          "nome": "Turma da Mônica - Laços",
+          "descricao": "Aventura emocionante da turma mais querida do Brasil.",
+          "preco": 27.0,
+          "imagem": "https://images.unsplash.com/photo-1617037011455-e96ff4bb8c58?auto=format&fit=crop&w=64&q=80"
+        }
+      ]
+    }
+  ]
+}
