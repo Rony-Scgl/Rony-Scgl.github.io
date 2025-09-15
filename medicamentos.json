@@ -1,0 +1,220 @@
+{
+    "timestamp": "2025-09-01 19:46:19",
+    "total_registros": 12,
+    "medicamentos": [
+        {
+            "id": 1,
+            "nome_medicamento": "Paracetamol",
+            "dosagem_valor": 500,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 3,
+            "horarios_personalizados": [
+                "08:00",
+                "14:00",
+                "20:00"
+            ],
+            "data_inicio": "2025-08-01",
+            "data_fim": "2025-08-10",
+            "foto_path": "\/imagens\/paracetamol.jpg",
+            "observacoes": "Tomar após as refeições",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 2,
+            "nome_medicamento": "Amoxicilina",
+            "dosagem_valor": 250,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 2,
+            "horarios_personalizados": [
+                "07:00",
+                "19:00"
+            ],
+            "data_inicio": "2025-08-05",
+            "data_fim": "2025-08-15",
+            "foto_path": "\/imagens\/amoxicilina.jpg",
+            "observacoes": "Completar o ciclo de 10 dias",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 3,
+            "nome_medicamento": "Losartana",
+            "dosagem_valor": 50,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 1,
+            "horarios_personalizados": [
+                "09:00"
+            ],
+            "data_inicio": "2025-07-01",
+            "data_fim": null,
+            "foto_path": null,
+            "observacoes": "Uso contínuo para pressão alta",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 4,
+            "nome_medicamento": "Metformina",
+            "dosagem_valor": 850,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 2,
+            "horarios_personalizados": [
+                "08:00",
+                "20:00"
+            ],
+            "data_inicio": "2025-06-20",
+            "data_fim": null,
+            "foto_path": null,
+            "observacoes": "Diabetes tipo 2 - manter controle glicêmico",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 5,
+            "nome_medicamento": "Omeprazol",
+            "dosagem_valor": 20,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 1,
+            "horarios_personalizados": [
+                "30 minutos antes do café da manhã"
+            ],
+            "data_inicio": "2025-08-10",
+            "data_fim": "2025-08-20",
+            "foto_path": "\/imagens\/omeprazol.jpg",
+            "observacoes": "Evitar bebidas ácidas durante o tratamento",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 6,
+            "nome_medicamento": "Ibuprofeno",
+            "dosagem_valor": 400,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 3,
+            "horarios_personalizados": [
+                "08:00",
+                "14:00",
+                "20:00"
+            ],
+            "data_inicio": "2025-08-12",
+            "data_fim": "2025-08-17",
+            "foto_path": null,
+            "observacoes": "Tomar com leite para evitar irritação estomacal",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 7,
+            "nome_medicamento": "Cloroquina",
+            "dosagem_valor": 150,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 1,
+            "horarios_personalizados": [
+                "12:00"
+            ],
+            "data_inicio": "2025-08-01",
+            "data_fim": "2025-08-21",
+            "foto_path": null,
+            "observacoes": "Evitar exposição ao sol",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 8,
+            "nome_medicamento": "Sinvastatina",
+            "dosagem_valor": 20,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 1,
+            "horarios_personalizados": [
+                "21:00"
+            ],
+            "data_inicio": "2025-07-10",
+            "data_fim": null,
+            "foto_path": "\/imagens\/sinvastatina.jpg",
+            "observacoes": "Tomar à noite",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 9,
+            "nome_medicamento": "Cetirizina",
+            "dosagem_valor": 10,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 1,
+            "horarios_personalizados": [
+                "22:00"
+            ],
+            "data_inicio": "2025-08-15",
+            "data_fim": "2025-08-22",
+            "foto_path": null,
+            "observacoes": "Pode causar sonolência",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 10,
+            "nome_medicamento": "Azitromicina",
+            "dosagem_valor": 500,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 1,
+            "horarios_personalizados": [
+                "09:00"
+            ],
+            "data_inicio": "2025-08-16",
+            "data_fim": "2025-08-20",
+            "foto_path": "\/imagens\/azitromicina.jpg",
+            "observacoes": "Antibiótico – seguir por 5 dias",
+            "ativo": true,
+            "criado_em": "2025-08-18 17:52:35",
+            "atualizado_em": "2025-08-18 17:52:35"
+        },
+        {
+            "id": 21,
+            "nome_medicamento": "Paracetamol",
+            "dosagem_valor": 500,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 3,
+            "horarios_personalizados": [
+                "08:00",
+                "14:00",
+                "20:00"
+            ],
+            "data_inicio": "2025-08-25",
+            "data_fim": "2025-09-01",
+            "foto_path": "\/imagens\/paracetamol.jpg",
+            "observacoes": "Tomar após as refeições",
+            "ativo": true,
+            "criado_em": "2025-08-25 17:49:39",
+            "atualizado_em": "2025-08-25 17:49:39"
+        },
+        {
+            "id": 22,
+            "nome_medicamento": "Paracetamol",
+            "dosagem_valor": 500,
+            "dosagem_unidade": "mg",
+            "frequencia_por_dia": 3,
+            "horarios_personalizados": [
+                "08:00",
+                "14:00",
+                "20:00"
+            ],
+            "data_inicio": "2025-08-25",
+            "data_fim": "2025-09-01",
+            "foto_path": "\/imagens\/paracetamol.jpg",
+            "observacoes": "Tomar após as refeições",
+            "ativo": true,
+            "criado_em": "2025-08-25 17:56:01",
+            "atualizado_em": "2025-08-25 17:56:01"
+        }
+    ]
+}
